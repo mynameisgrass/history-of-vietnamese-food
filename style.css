@@ -1,9 +1,9 @@
 :root {
-    --primary: #1a1a1a;
-    --accent: #c0392b;
-    --text: #333;
-    --light: #f4f4f4;
-    --white: #ffffff;
+    --primary: #1a0f0a;
+    --accent: #c5a059;
+    --text: #f4ece1;
+    --light: #2c1810;
+    --white: #fdfaf7;
 }
 
 * {
@@ -20,7 +20,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     color: var(--text);
-    background-color: var(--white);
+    background-color: var(--primary);
 }
 
 h1, h2, h3 {
@@ -38,9 +38,9 @@ h1, h2, h3 {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(30, 21, 16, 0.95);
     z-index: 1000;
-    border-bottom: 2px solid var(--primary);
+    border-bottom: 1px solid var(--accent);
 }
 
 .logo {
@@ -51,18 +51,18 @@ h1, h2, h3 {
 
 .nav-links .nav-btn {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--text);
     margin-left: 30px;
     font-weight: 400;
     font-size: 0.9rem;
     padding: 8px 20px;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--accent);
     transition: all 0.3s ease;
 }
 
 .nav-links .nav-btn:hover {
-    background: var(--primary);
-    color: var(--white);
+    background: var(--accent);
+    color: var(--primary);
 }
 
 /* Hero Section */
@@ -93,8 +93,8 @@ h1, h2, h3 {
 }
 
 .dark-bg {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: #0f0907;
+    color: var(--text);
 }
 
 .container {
@@ -140,8 +140,8 @@ h1, h2, h3 {
 
 /* Sharp Buttons */
 .sharp-btn {
-    background: var(--primary);
-    color: var(--white);
+    background: var(--accent);
+    color: var(--primary);
     border: none;
     padding: 15px 40px;
     font-size: 0.9rem;
@@ -149,11 +149,14 @@ h1, h2, h3 {
     letter-spacing: 2px;
     cursor: pointer;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .sharp-btn.secondary {
-    background: var(--white);
-    color: var(--primary);
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
 }
 
 .sharp-btn:hover {
@@ -165,7 +168,7 @@ footer {
     padding: 40px;
     text-align: center;
     background: #000;
-    color: #555;
+    color: var(--accent);
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
